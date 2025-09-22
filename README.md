@@ -27,11 +27,11 @@ El sistema puede ordenar los productos por **nombre, precio, stock y fecha de ca
 
 ### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente
 
-Para este avance decidí implementar dos enfoques. Para ordenar por nombre utilicé **Selection Sort**, ya que es un algoritmo sencillo de programar y me permite validar que las comparaciones funcionan correctamente. Aunque no es el más eficiente, me sirve como punto de partida para demostrar el ordenamiento dentro del inventario.  
+Para este avance decidí implementar dos enfoques. Para ordenar por nombre utilicé Selection Sort, ya que es un algoritmo sencillo de programar y me permite validar que las comparaciones funcionan correctamente. Aunque no es el más eficiente, me sirve como punto de partida para demostrar el ordenamiento dentro del inventario.  
 
-Para los casos de precio, stock y caducidad empleé **`std::sort`** de la STL, que utiliza introsort. Esto permite tener un algoritmo mucho más eficiente y práctico cuando se trabaja con listas más grandes, ya que garantiza un rendimiento promedio y en el peor caso de O(n log n).  
+Para los casos de precio, stock y caducidad empleé std::sort de la STL, que utiliza introsort. Esto permite tener un algoritmo mucho más eficiente y práctico cuando se trabaja con listas más grandes, ya que garantiza un rendimiento promedio y en el peor caso de O(n log n).  
 
-De esta manera, mi sistema integra tanto un algoritmo implementado por Selection Sort como un algoritmo optimizado de biblioteca (`std::sort`), lo que me permite justificar el uso de cada uno según la situación.  
+De esta manera, mi sistema integra tanto un algoritmo implementado por Selection Sort como un algoritmo optimizado de biblioteca std::sort, lo que me permite justificar el uso de cada uno según la situación.  
 
 ## SICT0301: Evalúa los componentes
 
@@ -39,9 +39,9 @@ De esta manera, mi sistema integra tanto un algoritmo implementado por Selection
 
 El algoritmo Selection Sort tiene complejidad de O(n²) en el mejor, promedio y peor caso. Esto significa que el tiempo de ejecución crece de forma cuadrática conforme aumenta el número de productos en el inventario, por lo que únicamente resulta práctico para volúmenes pequeños de datos como los que manejo en este avance.  
 
-El algoritmo `std::sort` tiene una complejidad promedio y en el peor caso de O(n log n), lo que lo hace mucho más eficiente para listas más grandes. Al apoyarse en introsort, ayuda a que en el peor escenario se mantenga un rendimiento decente.  
+El algoritmo std::sort tiene una complejidad promedio y en el peor caso de O(n log n), lo que lo hace mucho más eficiente para listas más grandes. Al apoyarse en introsort, ayuda a que en el peor escenario se mantenga un rendimiento decente.  
 
-De esta forma, Selection Sort me sirve como referencia didáctica y para validar los procesos de ordenamiento iniciales, mientras que `std::sort` representa la opción para manejar el inventario completo de manera fácil. 
+De esta forma, Selection Sort me sirve como referencia didáctica y para validar los procesos de ordenamiento iniciales, mientras que std::sort representa la opción para manejar el inventario completo de manera fácil. 
 
 
 ## SICT0303: Implementa acciones científicas
